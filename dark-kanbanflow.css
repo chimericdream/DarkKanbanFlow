@@ -1,0 +1,119 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("kanbanflow.com") {
+    body {
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==");
+    }
+
+    div#header {
+        background-color: #181818;
+        border-bottom-color: #181818;
+        min-height: 30px !important;
+        max-height: 30px !important;
+        width: 50%;
+    }
+
+    div#board-wrapper {
+        bottom: 0 !important;
+        padding: 0 !important;
+    }
+
+    div#board-wrapper #board-table {
+        margin: 0 !important;
+        margin-top: 1px !important;
+    }
+
+    #board-table thead .columnHeader {
+        background-color: #222;
+        color: #C4C4C4;
+    }
+
+    #board-table thead .columnHeader h2, h2.collapsed-info-title {
+        color: #C4C4C4;
+    }
+
+    .columnHeader.column-collapsed .columnHeader-inner .columnHeader-descriptionIcon {
+        display: none;
+    }
+
+    #board-table th, #board-table td {
+        border-color: #333;
+    }
+
+    div#board-footer {
+        height: 31px;
+        left: 50%;
+        top: 0;
+    }
+
+    #board-footer #toolbar {
+        background-color: #181818;
+        border-top-color: #181818;
+    }
+
+    .subTasks > li > label > input[type="checkbox"]:checked ~ span {
+        color: inherit;
+        text-decoration: line-through;
+    }
+
+    .task {
+        color: #DFDFDF;
+    }
+
+    .task.task-yellow {
+        background-color: #6C5D13;
+    }
+
+    .task.task-green {
+        background-color: #194C24;
+    }
+
+    .task.task-blue {
+        background-color: #19394C;
+    }
+
+    .task.task-red {
+        background-color: #7F1930;
+    }
+
+    .task.task-orange {
+        background-color: #5C3319;
+    }
+
+    .task.task-purple {
+        background-color: #20194C;
+    }
+
+    .task.task-white {
+        background-color: #AAA;
+        color: #222;
+    }
+
+    .task .task-labels .task-label {
+        color: #222;
+    }
+
+    #taskDialog {
+        background-color: #444;
+        border-color: #DFDFDf;
+        color: #DFDFDF;
+    }
+
+    #taskDialog .taskDialog-header {
+        background-image: linear-gradient(#333, #666);
+        border-color: #DFDFDF;
+    }
+
+    #taskDialog .taskDialog-tabs a {
+        color: #DFDFDF;
+    }
+
+    #taskDialog .taskDialog-tabs a.selected {
+        background-image: linear-gradient(#CCC, #EEE);
+        color: #222;
+    }
+
+    #taskDialog .taskLabelInput-label {
+        color: #222;
+    }
+}
